@@ -1,53 +1,41 @@
 [gd_scene format=3 uid="uid://ia31ia0n1cnw"]
 
-[ext_resource type="Texture2D" uid="uid://v3di7ymq5cgs" path="res://assets/enemy2all.png" id="1_867ty"]
+[ext_resource type="Texture2D" uid="uid://bdw17sk4u5o88" path="res://assets/enemy1all.png" id="1_867ty"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vfv5t"]
 atlas = ExtResource("1_867ty")
-region = Rect2(0, 0, 48, 32)
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mvvu1"]
-atlas = ExtResource("1_867ty")
-region = Rect2(48, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hv4bk"]
-atlas = ExtResource("1_867ty")
-region = Rect2(96, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qr8xe"]
-atlas = ExtResource("1_867ty")
-region = Rect2(144, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_05s6o"]
-atlas = ExtResource("1_867ty")
-region = Rect2(192, 0, 48, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_cdr67"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_mq1ta"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vfv5t")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mvvu1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hv4bk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qr8xe")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_05s6o")
 }],
 "loop": 1,
 "name": &"default",
-"speed": 7.0
+"speed": 6.0
 }]
 
-[node name="enemy2" type="Node2D" unique_id=1953196144]
+[sub_resource type="CircleShape2D" id="CircleShape2D_u67dh"]
+radius = 7.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=700084016]
-position = Vector2(0, -16)
-sprite_frames = SubResource("SpriteFrames_cdr67")
-frame_progress = 0.45430428
+[sub_resource type="CircleShape2D" id="CircleShape2D_cdr67"]
+radius = 72.00694
+
+[node name="enemy2" type="CharacterBody2D" unique_id=1101555476]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=904414368]
+sprite_frames = SubResource("SpriteFrames_mq1ta")
+frame_progress = 0.5884242
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1822922342]
+shape = SubResource("CircleShape2D_u67dh")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=989058899]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=10025233]
+shape = SubResource("CircleShape2D_cdr67")
+
+[node name="Timer" type="Timer" parent="." unique_id=1630400604]
+wait_time = 1.5
