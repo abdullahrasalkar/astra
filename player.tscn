@@ -155,9 +155,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jm5j8")
 }],
-"loop": 0,
+"loop": 2,
 "name": &"jump",
-"speed": 18.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -198,7 +198,9 @@ script = ExtResource("1_onrkg")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1412750527]
 position = Vector2(2, -3)
 sprite_frames = SubResource("SpriteFrames_saiou")
-animation = &"run"
+animation = &"jump"
+frame = 6
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1950794832]
 position = Vector2(2, -1.875)
