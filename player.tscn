@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c8dpmen2042bh"]
+
+[ext_resource type="Texture2D" uid="uid://mtdt80tvinyk" path="res://assets/robot1.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://lfgkvki7y2xc" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cdr67"]
+size = Vector2(20, 28.5)
+
+[node name="player" type="CharacterBody2D" unique_id=1730316471]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=391983245]
+texture = ExtResource("1_4flbx")
+region_enabled = true
+region_rect = Rect2(0, 0, 32.736168, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1950794832]
+position = Vector2(0, 0.25)
+shape = SubResource("RectangleShape2D_cdr67")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1743503910]
+zoom = Vector2(1.5, 1.5)
