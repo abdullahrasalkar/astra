@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://ia31ia0n1cnw"]
 
 [ext_resource type="Texture2D" uid="uid://bdw17sk4u5o88" path="res://assets/enemy1all.png" id="1_867ty"]
+[ext_resource type="Script" uid="uid://v3owisbx63aq" path="res://enemy_2.gd" id="1_mvvu1"]
+[ext_resource type="PackedScene" uid="uid://ckpxba8yal3o5" path="res://killzone.tscn" id="2_vfv5t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vfv5t"]
 atlas = ExtResource("1_867ty")
@@ -17,25 +19,29 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_u67dh"]
-radius = 7.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_mq1ta"]
+radius = 6.0827627
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_cdr67"]
-radius = 72.00694
-
-[node name="enemy2" type="CharacterBody2D" unique_id=1101555476]
+[node name="enemy2" type="Node2D" unique_id=1308489542]
+script = ExtResource("1_mvvu1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=904414368]
 sprite_frames = SubResource("SpriteFrames_mq1ta")
 frame_progress = 0.5884242
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1822922342]
-shape = SubResource("CircleShape2D_u67dh")
-
 [node name="Area2D" type="Area2D" parent="." unique_id=989058899]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=10025233]
-shape = SubResource("CircleShape2D_cdr67")
 
 [node name="Timer" type="Timer" parent="." unique_id=1630400604]
 wait_time = 1.5
+
+[node name="killzone" parent="." unique_id=315225257 instance=ExtResource("2_vfv5t")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=2098856116]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_mq1ta")
+
+[node name="RayCastRight" type="RayCast2D" parent="." unique_id=1418598482]
+target_position = Vector2(9, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="." unique_id=1512996751]
+target_position = Vector2(-9, 0)
