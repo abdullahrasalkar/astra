@@ -208,3 +208,4 @@ shape = SubResource("RectangleShape2D_cdr67")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1743503910]
 zoom = Vector2(1.5, 1.5)
+limit_left = -190
