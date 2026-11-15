@@ -80,7 +80,9 @@ shape = SubResource("RectangleShape2D_u67dh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=603886234]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_mq1ta")
-frame_progress = 0.5918208
+autoplay = "default"
+frame = 3
+frame_progress = 0.8559146
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1110628927]
 zoom = Vector2(1.5, 1.5)
