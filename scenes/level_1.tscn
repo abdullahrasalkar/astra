@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://j0ac4non5ncg"]
 
 [ext_resource type="Texture2D" uid="uid://c4waxqalhcwni" path="res://assets/platform.png" id="1_014kd"]
+[ext_resource type="PackedScene" uid="uid://dgtpqgifhc0hr" path="res://scenes/player.tscn" id="2_bswci"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bswci"]
 texture = ExtResource("1_014kd")
@@ -91,55 +92,105 @@ texture = ExtResource("1_014kd")
 12:15/0 = 0
 13:15/0 = 0
 2:21/0 = 0
+2:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:21/0 = 0
+3:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:21/0 = 0
+4:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:21/0 = 0
+5:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:21/0 = 0
+6:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:21/0 = 0
+7:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:21/0 = 0
+8:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:21/0 = 0
+9:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 10:21/0 = 0
+10:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 11:21/0 = 0
+11:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 12:21/0 = 0
+12:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:21/0 = 0
+13:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:21/0 = 0
+14:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:21/0 = 0
+15:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:22/0 = 0
+2:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:22/0 = 0
+3:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:22/0 = 0
+4:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:22/0 = 0
+5:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:22/0 = 0
+6:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:22/0 = 0
+7:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:22/0 = 0
+8:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:22/0 = 0
+9:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 10:22/0 = 0
+10:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:22/0 = 0
+12:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:22/0 = 0
+13:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:22/0 = 0
+14:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:22/0 = 0
+15:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:23/0 = 0
+2:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:23/0 = 0
+3:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:23/0 = 0
+4:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:23/0 = 0
+5:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:23/0 = 0
+6:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:23/0 = 0
+7:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:23/0 = 0
+8:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:23/0 = 0
+12:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:23/0 = 0
+13:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:23/0 = 0
+14:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:23/0 = 0
+15:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:24/0 = 0
+2:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 3:24/0 = 0
+3:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 4:24/0 = 0
+4:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 6:24/0 = 0
+6:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:24/0 = 0
+7:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:24/0 = 0
+8:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:24/0 = 0
+9:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:24/0 = 0
+10:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:24/0 = 0
+11:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:25/0 = 0
+6:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 7:25/0 = 0
+7:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 8:25/0 = 0
+8:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
 2:30/0 = 0
 3:30/0 = 0
 4:30/0 = 0
@@ -158,6 +209,7 @@ texture = ExtResource("1_014kd")
 5:33/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_cdr67"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_bswci")
 
 [node name="level_1" type="Node2D" unique_id=1498936234]
@@ -166,3 +218,6 @@ sources/0 = SubResource("TileSetAtlasSource_bswci")
 tile_set = SubResource("TileSet_cdr67")
 format = 2
 layer_0/tile_data = PackedInt32Array(0, 393216, 21, 1, 458752, 21, 2, 458752, 21, 3, 458752, 21, 4, 458752, 21, 5, 458752, 21, 6, 458752, 21, 7, 458752, 21, 8, 458752, 21, 9, 458752, 21, 10, 458752, 21, 11, 458752, 21, 12, 458752, 21, 13, 458752, 21, 14, 458752, 21, 15, 458752, 21, 16, 524288, 21, 65536, 393216, 23, 131072, 393216, 23, 196608, 393216, 23, 262144, 393216, 23, 327680, 393216, 24, 327696, 524288, 24, 262160, 524288, 23, 196624, 524288, 23, 131088, 524288, 23, 65552, 524288, 23, 327681, 458752, 24, 327682, 458752, 24, 327683, 458752, 24, 327684, 458752, 24, 327685, 458752, 24, 327686, 458752, 24, 327687, 458752, 24, 327688, 458752, 24, 327689, 458752, 24, 327690, 458752, 24, 327691, 458752, 24, 327692, 458752, 24, 327693, 458752, 24, 327694, 458752, 24, 327695, 458752, 24, 65537, 458752, 23, 131073, 458752, 23, 196609, 458752, 23, 262145, 458752, 23, 65538, 458752, 23, 131074, 458752, 23, 196610, 458752, 23, 262146, 458752, 23, 65539, 458752, 23, 131075, 458752, 23, 196611, 458752, 23, 262147, 458752, 23, 65540, 458752, 23, 131076, 458752, 23, 196612, 458752, 23, 262148, 458752, 23, 65541, 458752, 23, 131077, 458752, 23, 196613, 458752, 23, 262149, 458752, 23, 65542, 458752, 23, 131078, 458752, 23, 196614, 458752, 23, 262150, 458752, 23, 65543, 458752, 23, 131079, 458752, 23, 196615, 458752, 23, 262151, 458752, 23, 65544, 458752, 23, 131080, 458752, 23, 196616, 458752, 23, 262152, 458752, 23, 65545, 458752, 23, 131081, 458752, 23, 196617, 458752, 23, 262153, 458752, 23, 65546, 458752, 23, 131082, 458752, 23, 196618, 458752, 23, 262154, 458752, 23, 65547, 458752, 23, 131083, 458752, 23, 196619, 458752, 23, 262155, 458752, 23, 65548, 458752, 23, 131084, 458752, 23, 196620, 458752, 23, 262156, 458752, 23, 65549, 458752, 23, 131085, 458752, 23, 196621, 458752, 23, 262157, 458752, 23, 65550, 458752, 23, 131086, 458752, 23, 196622, 458752, 23, 262158, 458752, 23, 65551, 458752, 23, 131087, 458752, 23, 196623, 458752, 23, 262159, 458752, 23)
+
+[node name="Player" parent="." unique_id=714725692 instance=ExtResource("2_bswci")]
+position = Vector2(18, -4)
