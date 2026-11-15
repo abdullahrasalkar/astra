@@ -12,6 +12,7 @@ var is_dashing = false
 var facing_direction = 1
 
 func _physics_process(delta):
+
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
