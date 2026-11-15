@@ -222,4 +222,4 @@ layer_0/tile_data = PackedInt32Array(0, 393216, 22, 65536, 393216, 23, 131072, 3
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap" unique_id=498817053]
 
 [node name="Player" parent="." unique_id=714725692 instance=ExtResource("2_bswci")]
-position = Vector2(-57, -20)
+position = Vector2(15, -2)
