@@ -7,5 +7,11 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(delta2: float) -> void:
 	pass
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.get("jump_pad_height"):
+		body.velocity.y = body.jump_pad_height
+		$AnimatedSprite2D.play("activate")

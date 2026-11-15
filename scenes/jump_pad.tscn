@@ -1,15 +1,60 @@
 [gd_scene format=3 uid="uid://b18n37n876u5i"]
 
-[ext_resource type="Texture2D" uid="uid://pk423p3tuvci" path="res://icon.svg" id="1_7e8al"]
+[ext_resource type="Texture2D" uid="uid://bepel41er7fqp" path="res://assets/JumpPad1-sheet.png" id="1_7e8al"]
+[ext_resource type="Script" uid="uid://ry7vh83f3b1m" path="res://scenes/jump_pad.gd" id="1_kabc6"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_saiou"]
-size = Vector2(121, 123)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kabc6"]
+atlas = ExtResource("1_7e8al")
+region = Rect2(32, 0, 16, 16)
 
-[node name="JumpPad" type="Node2D" unique_id=605468199]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ityjr"]
+atlas = ExtResource("1_7e8al")
+region = Rect2(48, 0, 16, 16)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1346099025]
-texture = ExtResource("1_7e8al")
+[sub_resource type="AtlasTexture" id="AtlasTexture_25k7v"]
+atlas = ExtResource("1_7e8al")
+region = Rect2(64, 0, 16, 16)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1631678040]
-position = Vector2(-0.5, -0.5)
-shape = SubResource("RectangleShape2D_saiou")
+[sub_resource type="SpriteFrames" id="SpriteFrames_s7wsd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kabc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ityjr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25k7v")
+}],
+"loop": 0,
+"name": &"activate",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7wsd"]
+size = Vector2(14, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7rlf"]
+size = Vector2(11, 3)
+
+[node name="JumpPad" type="Node2D" unique_id=503947343]
+script = ExtResource("1_kabc6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=950185000]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=681507587]
+sprite_frames = SubResource("SpriteFrames_s7wsd")
+animation = &"activate"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=792623733]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_s7wsd")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=314141640]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1584838588]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_s7rlf")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
