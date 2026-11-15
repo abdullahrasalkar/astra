@@ -7,6 +7,10 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u67dh"]
 size = Vector2(19, 29)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
+atlas = ExtResource("2_g2els")
+region = Rect2(0, 0, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
 atlas = ExtResource("1_3vyb7")
 region = Rect2(0, 0, 32, 33)
@@ -39,12 +43,16 @@ region = Rect2(192, 0, 32, 33)
 atlas = ExtResource("1_3vyb7")
 region = Rect2(224, 0, 32, 33)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
-atlas = ExtResource("2_g2els")
-region = Rect2(0, 0, 32, 32)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_04d80"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2wvv")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qhqgy")
@@ -71,16 +79,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_y4r1p")
 }],
 "loop": 1,
-"name": &"default",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d2wvv")
-}],
-"loop": 1,
-"name": &"idle",
-"speed": 5.0
+"name": &"run",
+"speed": 13.0
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=714725692]
@@ -96,5 +96,6 @@ zoom = Vector2(1.5, 1.5)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=555437202]
 position = Vector2(0, -15)
 sprite_frames = SubResource("SpriteFrames_04d80")
-animation = &"idle"
-frame_progress = 0.009434456
+animation = &"run"
+frame = 2
+frame_progress = 0.99422705
