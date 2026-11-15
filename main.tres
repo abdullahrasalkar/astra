@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c4waxqalhcwni" path="res://assets/platform.png" id="1_vmmo2"]
 [ext_resource type="Texture2D" uid="uid://dy66j3whn22uq" path="res://assets/tileconnector.png" id="2_0ru1r"]
+[ext_resource type="Texture2D" uid="uid://c88uywo6injyi" path="res://assets/Corner Image..png" id="2_t1uk1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_014kd"]
 texture = ExtResource("1_vmmo2")
@@ -206,11 +207,16 @@ texture = ExtResource("1_vmmo2")
 4:33/0 = 0
 5:34/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oblph"]
+texture = ExtResource("2_t1uk1")
+0:0/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcfvj"]
 texture = ExtResource("2_0ru1r")
 0:0/0 = 0
 
 [resource]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_014kd")
 sources/2 = SubResource("TileSetAtlasSource_fcfvj")
+sources/0 = SubResource("TileSetAtlasSource_014kd")
+sources/1 = SubResource("TileSetAtlasSource_oblph")
