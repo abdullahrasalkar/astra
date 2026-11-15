@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b18n37n876u5i"]
+
+[ext_resource type="Texture2D" uid="uid://pk423p3tuvci" path="res://icon.svg" id="1_7e8al"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_saiou"]
+size = Vector2(121, 123)
+
+[node name="JumpPad" type="Node2D" unique_id=605468199]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1346099025]
+texture = ExtResource("1_7e8al")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1631678040]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_saiou")
