@@ -8,6 +8,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u67dh"]
 size = Vector2(19, 29)
 
+<<<<<<< HEAD
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
 atlas = ExtResource("2_dqkch")
 region = Rect2(0, 0, 32, 32)
@@ -36,6 +37,12 @@ region = Rect2(160, 0, 32, 32)
 atlas = ExtResource("2_dqkch")
 region = Rect2(192, 0, 32, 32)
 
+=======
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
+atlas = ExtResource("2_g2els")
+region = Rect2(0, 0, 32, 32)
+
+>>>>>>> 7521cfa2453018e688dec67ce1a249ec5c589018
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
 atlas = ExtResource("1_3vyb7")
 region = Rect2(0, 0, 32, 33)
@@ -68,14 +75,11 @@ region = Rect2(192, 0, 32, 33)
 atlas = ExtResource("1_3vyb7")
 region = Rect2(224, 0, 32, 33)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
-atlas = ExtResource("2_g2els")
-region = Rect2(0, 0, 32, 32)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_04d80"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+<<<<<<< HEAD
 "texture": SubResource("AtlasTexture_3v2ag")
 }, {
 "duration": 1.0,
@@ -98,6 +102,12 @@ animations = [{
 }],
 "loop": 1,
 "name": &"dash",
+=======
+"texture": SubResource("AtlasTexture_d2wvv")
+}],
+"loop": 1,
+"name": &"idle",
+>>>>>>> 7521cfa2453018e688dec67ce1a249ec5c589018
 "speed": 5.0
 }, {
 "frames": [{
@@ -126,16 +136,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_y4r1p")
 }],
 "loop": 1,
-"name": &"default",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d2wvv")
-}],
-"loop": 1,
-"name": &"idle",
-"speed": 5.0
+"name": &"run",
+"speed": 13.0
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=714725692]
@@ -151,5 +153,11 @@ zoom = Vector2(1.5, 1.5)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=555437202]
 position = Vector2(1, -15)
 sprite_frames = SubResource("SpriteFrames_04d80")
+<<<<<<< HEAD
 animation = &"idle"
 frame_progress = 0.37851125
+=======
+animation = &"run"
+frame = 2
+frame_progress = 0.99422705
+>>>>>>> 7521cfa2453018e688dec67ce1a249ec5c589018
